@@ -23,7 +23,7 @@ class Restaurant:
         else:
             print(f"Employees in {self.name}:")
 
-            print(f"Name\tPhone\tEmail\tAddress\tAge\tDegination\tSalary")
+            print(f"Name\tPhone\tEmail\t\tAddress\tAge\tDegination\tSalary")
             for emp in self.employees:
                 
-                print(f"{emp.name}\t{emp.phone}\t{emp.email}\t{emp.address}\t{emp.age}\t{emp.degination}\t{emp.salary}")
+                print(f"{emp.name}\t{emp.phone}\t{emp.email}\t\t{emp.address}\t{emp.age}\t{emp.degination}\t{emp.salary}")
