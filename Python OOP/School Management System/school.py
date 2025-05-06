@@ -23,9 +23,13 @@ class School:
         print(f"Teacher {teacher.name} added to {self.name} for subject {subject}.")
 
     
-    def student_admission(self, student, classroom_name):
+    def student_admission(self, student):
 
-        pass
+        class_name = student.classroom.name
+        self.class_rooms[class_name].add_student(student)
+
+
+
 
     @staticmethod
     def calculate_grade(marks):
@@ -81,7 +85,47 @@ class School:
             return "F"
         
     def __str__(self):
-        # return f"School Name: {self.name}, Address: {self.address} with classrooms {self.class_rooms} and marks 
-        pass
+        
+        print("===========All Students==========")
+
+        result = ""
+
+        for key, value in self.class_rooms.items():
+
+            result += f"{key.upper()} ClassRoom Students\n"
+
+            for student in value.students:
+
+                result += f"{student.name}\n"
+
+        print(result)
+
+
+        print("===========All Subjects==========")
+
+        subject = ""
+
+        for key, value in self.class_rooms.items():
+
+            subject += f"{key.upper()} ClassRoom Subjects\n"
+
+            for sub in value.subjects:
+
+                subject += f"{sub.name}\n"
+
+        print(subject)
+
+
+        print("Students Marks\n")
+
+        for key, value in self.class_rooms.items():
+            for student in value.students:
+                for k, i in student.marks.items():
+                    print(student.name, k, i, student.sub_grades[k])
+
+                print(student.final_grade())
+
+        return ""
+
         
              

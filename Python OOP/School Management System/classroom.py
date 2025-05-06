@@ -6,7 +6,7 @@ class ClassRoom:
         self.subjects = []
     
 
-    def __add_student(self, student):
+    def add_student(self, student):
 
         roll_num = f"{self.name} - {len(self.students) + 1}"
 
