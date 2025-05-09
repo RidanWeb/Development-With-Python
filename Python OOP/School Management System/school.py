@@ -84,7 +84,7 @@ class School:
         else:
             return "F"
         
-    def __str__(self):
+    def __repr__(self):
         
         print("===========All Students==========")
 
@@ -122,10 +122,10 @@ class School:
             for student in value.students:
                 for k, i in student.marks.items():
                     print(student.name, k, i, student.sub_grades[k])
+                x = student.calculate_final_grade()
+                print(x)
 
-                print(student.final_grade())
-
-        return ""
+        return ''
 
         
              

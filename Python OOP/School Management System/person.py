@@ -9,12 +9,12 @@ class Person:
 
 class Teacher(Person):
 
-    def __init__(self, name, subject):
+    def __init__(self, name):
         super().__init__(name)
 
     def evaluate_exam(self):
         
-        return random.randint(0, 100 )
+        return random.randint(40, 100 )
     
 
 class Student(Person):
@@ -35,9 +35,18 @@ class Student(Person):
             point = School.grade_to_value(grade)
             sum += point
 
-        gpa = sum / len(self.sub_grades)
+        if sum == 0:
 
-        self.final_grade = School.value_to_grade(gpa)
+            gpa = 0.00
+            self.final_grade = 'F'
+
+        else:
+
+            gpa = sum / len(self.sub_grades)
+
+            self.final_grade = School.value_to_grade(gpa)
+
+            return f"{self.name} Final grade : {self.final_grade} with gpa : {gpa}"
 
     
     @property
@@ -45,7 +54,7 @@ class Student(Person):
 
         return self.__id
 
-    @id.setter
+    @get_id.setter
     def set_id(self, value):
 
         self.__id = value

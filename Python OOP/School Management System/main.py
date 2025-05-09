@@ -10,17 +10,13 @@ school = School("Jamil's School", "Ghoraghat")
 eight = ClassRoom("Eight")
 nine = ClassRoom("Nine")
 ten = ClassRoom("Ten")
-one = ClassRoom("One")
 
 
 
 school.add_class_room(eight)
 school.add_class_room(nine)
 school.add_class_room(ten)
-school.add_class_room(one)
 
-rahim = Student("Rahim", one)
-karim = Student("karim", one)
 rahima = Student("Rahims", ten)
 karima = Student("Karima", nine)
 sarima = Student("Sarima", eight)
@@ -28,8 +24,6 @@ ridan = Student("Ridan", nine)
 
 
 
-school.student_admission(rahim)
-school.student_admission(karim)
 school.student_admission(rahima)
 school.student_admission(karima)
 school.student_admission(sarima)
@@ -65,6 +59,8 @@ ten.add_subject(physics)
 
 
 eight.semester_final_exam()
+nine.semester_final_exam()
+ten.semester_final_exam()
 
 
 print(school)

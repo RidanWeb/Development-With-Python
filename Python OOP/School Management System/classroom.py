@@ -20,7 +20,7 @@ class ClassRoom:
     def semester_final_exam(self):
 
         for subject in self.subjects:
-            subject.exam(self.subjects)
+            subject.exam(self.students)
         
         for student in self.students:
             student.calculate_final_grade()
