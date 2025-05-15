@@ -37,12 +37,11 @@ class Admin:
 
 
 
-    def add_bus(self, number, route, seat):
-        bus = Bus(number, route, seat)
+    def addBus(self, busSystem, bus):
 
-        bus_system = BusSystem()
-        bus_system.addBus(bus)
-        print(f"Bus {number} added successfully.")
+        busSystem.addBus(bus)
+
+        print(f"Bus added successfully.")
 
 
     def viewBuses(self):

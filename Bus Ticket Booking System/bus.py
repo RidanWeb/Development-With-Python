@@ -1,5 +1,3 @@
-from user import Passenger
-
 
 
 class Bus:
