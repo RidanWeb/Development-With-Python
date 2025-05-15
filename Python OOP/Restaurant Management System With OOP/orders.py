@@ -8,7 +8,7 @@ class Order:
     def add_item(self, item):
 
         if item in self.items:
-            self.items[item] += item.quantity
+            self.items[item] += item.quantity #Output: {<Item Apple>: 5, <Item Banana>: 2}
 
         else:
             self.items[item] = item.quantity

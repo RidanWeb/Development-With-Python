@@ -44,7 +44,7 @@ class Customer(User):
         print(f"Card for {self.name}:")
         print("name\tPrice\tQuantity")
 
-        for item, quantity in self.card.items.items():#confusing============================
+        for item, quantity in self.card.items.items():
 
             print("name\tPrice\tQuantity")
             print(f"{item.name}\t{item.price}\t{quantity}")
