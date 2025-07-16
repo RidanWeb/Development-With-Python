@@ -1,0 +1,149 @@
+1. Find those emp whoes salary is greater than a specific employee's salary
+
+SELECT * 
+FROM employees
+WHERE SALARY > (
+    	SELECT SALARY
+        FROM EMPLOYEES
+        WHERE EMPLOYEE_ID = 144
+       ) ORDER BY SALARY ASC;
+
+
+2. find thes employee who get maximum salary.
+
+SELECT *
+FROM employees
+WHERE SALARY = (
+	SELECT max(SALARY)
+	FROM EMPLOYEES
+	);
+
+
+
+3. find those employee who work in marketing department and their average salary
+
+select *, avg(salary) as AVG_salary 
+from employees 
+where department_id = (
+    	select department_id 
+    	from departments 
+    	where department_name = 'marketing'
+	);
+
+
+
+4. total number of employee in it sepaetment.
+
+select count(*) as Employees_in_IT 
+from employees 
+where department_id = (
+	select department_id
+	from departments 
+	where department_name = 'IT'
+	);
+
+
+
+5. total salary for it department.
+
+SELECT SUM(SALARY)
+FROM employees
+WHERE job_id = (
+    SELECT job_id
+	FROM jobs
+	WHERE job_title = 'PROGRAMMER'
+);
+
+
+***************************************ADVANCE SUB QUERY*************************************
+
+1. Who get the second height salary
+
+sol 01:
+--------
+SELECT * 
+FROM employees
+where salary = (
+    SELECT DISTINCT salary 
+	from employees
+	ORDER BY salary DESC
+	LIMIT 1,1
+);
+
+sol 02:
+--------
+SELECT * FROM employees 
+WHERE salary = (
+    SELECT max(salary)
+	FROM employees 
+	where salary < (SELECT max(salary)
+	FROM employees)
+);
+
+2. find those emp who get more salary than their manager.
+SELECT * 
+FROM employees as emp
+WHERE salary > (SELECT salary 
+                FROM employees as mng
+    			WHERE emp.manager_id = mng.employee_id
+	);
+
+
+
+3.get those employees who work same job as their manager.
+
+SELECT * FROM employees as emp
+
+where job_id = ( 
+    SELECT job_id 
+    FROM employees as mng 
+    WHERE emp.manager_id = mng.employee_id
+);
+
+
+
+**********************************Join Table******************************
+
+1. get all the employees first name along with their department name
+
+without JOin Keyword:
+-----------------------
+SELECT first_name, department_name 
+FROM employees as e, departments as d
+WHERE e.department_id = d.department_id;
+
+with Join keyword:
+-----------------------
+SELECT first_name, department_name 
+FROM employees as e JOIN departments as d
+ON e.department_id = d.department_id;
+
+
+2. get all employees first name along with their manager name
+
+SELECT e.first_name, m.first_name
+FROM employees as e JOIN employees as m
+ON e.manager_id = m.employee_id;
+
+
+3. find all the department where no employees exist.
+
+SELECT departments.department_name
+FROM departments 
+LEFT JOIN employees on departments.department_id = employees.department_id
+WHERE employees.department_id IS NULL;
+
+
+4. get first namr, salary and less than avg salary of their department
+
+SELECT e.first_name, e.salary, (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id)-e.salary as Less_than_Avg_salary
+FROM employees as e JOIN departments as d
+on e.department_id = d.department_id;
+
+5. find those department name whoes minimum salary is lass than 5000.
+
+SELECT department_name, MIN(salary) as min_salary, AVG(salary) as avg_salary
+from employees as e JOIN departments as d
+on e.department_id = d.department_id
+GROUP BY department_name
+HAVING MIN(salary) > 1000;
