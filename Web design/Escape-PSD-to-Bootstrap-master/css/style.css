@@ -1,0 +1,283 @@
+@font-face {
+    font-family: Brandon_reg;
+    src: url(../Brandon_Grotesque/Brandon_reg.otf);
+}
+@font-face {
+    font-family: Brandon_light;
+    src: url(../Brandon_Grotesque/Brandon_light.otf);
+}
+@font-face {
+    font-family: Brandon_med;
+    src: url(../Brandon_Grotesque/Brandon_med.otf);
+}
+@font-face {
+    font-family: Brandon_bld;
+    src: url(../Brandon_Grotesque/Brandon_bld.otf);
+}
+
+span{
+	font-family: Brandon_light;
+}
+h1{
+	font-family: Brandon_bld;
+	font-size: 59.99px;
+	color: #222222;
+	margin-bottom: 25px;
+}
+p{
+	font-family: Brandon_reg;
+	font-size: 18px;
+	color: #777777;
+	margin-bottom: 38px;           
+}
+
+
+.clients-img {
+  animation-duration: 2.5s;
+  animation-delay: .1s;
+}
+.member-image{
+  animation-duration: 2.5s;
+  animation-delay: .1s;
+}
+
+
+/*banner-start*/
+.banner{
+	background: url(../images/banner-img.jpg) no-repeat center;
+	background-size: cover;
+}
+.custom-nav{
+	padding: 30px 0;
+}
+.custom-menu ul li a{
+	font-family: Brandon_med;
+	font-size: 18px;
+	color: #ffffff !important;
+	padding: 0 !important;
+	padding: 0 15px !important;
+	transition: 0.5s;
+}
+.custom-menu ul li a:hover{
+	color: #7BC652 !important;
+}
+.custom-menu ul li:first-child a {
+	padding-left:0 !important;
+}
+.custom-menu ul li:last-child a {
+	padding-right:0 !important;
+}
+.banner-contant{
+	padding: 125px 0;
+}
+.banner-contant p{
+	font-family: Brandon_light;
+	font-size: 32px;
+	margin-bottom: 24px;
+	color: #ffffff;
+}
+.banner-contant h1{
+	font-family: Brandon_bld;
+	font-size: 65.99px;
+	margin-bottom: 70px;
+	color: #ffffff;
+}
+.banner-button button{
+	font-family: Brandon_bld;
+	background: transparent;
+	font-size: 23px;
+	color: #ffffff;
+	border: none;
+	border:3px solid #ffffff;
+	border-radius: 3px;
+	padding:18px 60px !important;
+	transition: 0.5s;
+}
+.banner-button button:hover{
+	background: #ffffff;
+	color: #000000;
+	font-size: 25px;
+}
+/*banner-end*/
+/*development-start*/
+.development{
+	padding: 100px 0;
+}
+/*development-end*/
+/*branding-start*/
+.branding{
+	padding: 100px 0;
+	background: #FAFAFA;
+}
+/*branding-end*/
+/*service-start*/
+.service{
+	padding: 100px 0;
+}
+.service-text h1{
+	font-family: Brandon_med;
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+.service-text p{
+	margin-bottom: 50px;
+}
+.service-icon{
+	background: #000000;
+	text-align: center;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
+.service-icon i{
+	font-size: 35px;
+	color: #ffffff;
+	margin-top: 18px;
+}
+/*service-end*/
+/*clients-start*/
+.clients{
+	background: #FAFAFA;
+	padding: 100px 0;
+}
+.client-title p{
+	font-size: 22px;
+}
+.mb-40{
+	margin-bottom: 40px;
+}
+.clients-img{
+	height: 220px;
+	width: 220px;
+	background: #111111;
+	border-radius: 50%;
+}
+.clients-text p,.clients-text-2 p{
+	font-size: 26px;
+	margin-bottom: 16px;
+}
+.clints-p{
+	color: #7690c5;
+	font-size: 20px;
+}
+.clients-text,.clients-text-2{
+	background: #ffffff;
+	position: relative;
+	padding: 40px 50px;
+    border: 2px solid #F2F2F2;
+}
+ .clients-text::after,.clients-text-2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -9px;
+    border-width: 12px 20px 12px 0;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+.clients-text-2::after {
+	left: 100%;
+    border-width: 12px 0 12px 20px;
+	border-color: transparent transparent transparent #ffffff;
+} 
+/*clients-end*/
+/*market-place-start*/
+.market-place{
+	padding: 60px 0;
+}
+.market-place-images ul li img{
+	margin: 0 20px;
+}
+.market-place-images ul li:first-child img {
+	margin-left: 0;
+}
+.market-place-images ul li:last-child  img{
+	margin-right: 0;
+}
+/*market-place-end*/
+/*team-start*/
+.team{
+	background: #111111;
+	padding: 100px 0;
+}
+.team-member h1{
+	font-size: 18px;
+	margin-top: 19px;
+}
+.team-member span{
+	font-family: Brandon_reg;
+	font-size: 16px;
+}
+.team-member ul li{
+    border: 3px solid #ffffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.team-member ul li i{
+	font-size: 22px;
+    margin-top: 12px;
+}
+.member-image{
+	height: 235px;
+	width: 235px;
+	border: 7px solid #ffffff;
+	border-radius: 50%;
+}
+.team-text p{
+	font-size: 20px;
+	color: #ebebeb;
+	margin-top: 35px;
+    margin-bottom: 15px;
+}
+/*team-end*/
+/*contact-start*/
+.contact{
+	background: #748FC2;
+	padding: 100px 0;
+}
+.contact-left-tilte h1{
+	color: #ffffff;
+}
+.contact-left-tilte p{
+	color: #ffffff;
+}
+.contact-left-social{
+	margin-bottom: 40px;
+}
+.contact-left-social i{
+	font-size: 28px;
+	color: #ffffff;
+	margin-right: 15px;
+}
+.contact-left-social span{
+	font-family: Brandon_reg;
+	font-size: 18px;
+	color: #ffffff;
+}
+.form input{
+	padding: 10px 20px;
+	margin-bottom: 25px;
+	border: none;
+	border: 1px solid #C2C5CA;
+}
+.form textarea{
+	padding: 10px 20px 150px 20px;
+	border: none;
+	border: 1px solid #C2C5CA;
+}
+/*contact-end*/
+/*footer-start*/
+footer{
+	padding: 40px 0;
+	background: #748FC2;
+}
+.footer-text p{
+	font-family: Brandon_med;
+	font-size: 16px;
+	color: #ffffff;
+	margin-bottom: 0;
+}
+/*footer-end*/

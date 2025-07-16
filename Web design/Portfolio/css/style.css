@@ -1,0 +1,46 @@
+body{
+
+    background-color: black;
+}
+
+/* .header{
+
+    position: sticky;
+    top: 0;
+}
+
+
+nav.shrink {
+	background:#fff;
+	padding:15px 100px;
+	transition:.6s;
+	border-bottom:4px solid #FF5B2B
+} */
+
+.manu li a{
+
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.manu li a:hover{
+
+    color: aqua;
+}
+
+.contact-form{
+
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+::placeholder {
+  color: white !important;
+  opacity: 1; /* Ensures the color is not faded */
+}
+
+footer{
+
+
+    border-top: 2px solid #4d4d4d;
+}

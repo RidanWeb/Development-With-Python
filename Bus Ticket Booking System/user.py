@@ -1,4 +1,4 @@
-from bus import Bus, BusSystem
+# from bus import Bus, BusSystem
 
 
 class Passenger:
@@ -9,15 +9,13 @@ class Passenger:
         self.bus = bus
 
 
-    def bookTicket(self, busNumber, name, phone, seat):
-        bus = BusSystem()
-        bus.bookTicket(busNumber, name, phone, seat)
+    def bookTicket(self,busSystem, busNumber, name, phone, seat):
+        busSystem.bookTicket(busNumber, seat)
         
-        print(f"Ticket booked successfully for {name} on bus {busNumber}.")
+        # print(f"Ticket booked successfully for {name} phone {phone} on bus {busNumber}.")
 
-    def viewBus(self):
-        bus = BusSystem()
-        bus.viewBuses()
+    def viewBus(self, busSystem):
+        busSystem.viewBuses()
 
 
 
@@ -44,6 +42,5 @@ class Admin:
         print(f"Bus added successfully.")
 
 
-    def viewBuses(self):
-        bus_system = BusSystem()
-        bus_system.viewBuses()
+    def viewBuses(self, busSystem):
+        busSystem.viewBuses()

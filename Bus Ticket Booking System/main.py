@@ -1,4 +1,4 @@
-from user import Admin
+from user import Admin, Passenger
 from bus import BusSystem, Bus
 
 
@@ -30,10 +30,14 @@ def adminManu():
                 admin.addBus(busSystem, bus)
             
             elif adminChoice == 2:
-                admin.viewBuses()
+                admin.viewBuses(busSystem)
 
             elif adminChoice == 3:
                 return
+            
+            else:
+                
+                print("Invalid Choice...!")
         
         
 
@@ -66,14 +70,45 @@ while True:
         adminManu()
 
     elif choice == 2:
+        
+        print("Each ticket price 500 taka.\nDo you want to process next...?") 
+        
+        print("1. Yes")
+        print("2. No")
+        
+        fairChoice = int(input("Enter your choice: "))
+        
+        if(fairChoice == 1):
+            
+            busNumber = int(input("Enter bus number: "))
+            name = input("Enter your name: ")
+            phone = input("Enter your phone no: ")
+            seat = int(input("Enter number of seats to book: "))
+            
+            bus = busSystem.findBus(busNumber)
+            
+            if bus:
+                user = Passenger(name, phone, bus)
+                user.bookTicket(busSystem, busNumber, name, phone, seat)
+            
+            else:
+                print("Bus not found....")
+                
+        else:
+            break
 
-        busNumber = input("Enter bus number: ")
-        seat = int(input("Enter number of seats to book: "))
-
-        busSystem.bookTicket(busNumber, seat)
+            
 
     elif choice == 3:
 
         busSystem.viewBuses()
+        
+        
+    elif choice == 4:
+        break
+    
+    
+    else:
+        print("Invalid Choice...!!!")
 
 

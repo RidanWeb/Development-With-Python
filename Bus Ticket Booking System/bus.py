@@ -1,20 +1,22 @@
 
 
 class Bus:
+    
+    
     def __init__(self, number, route, totalSeats):
         self.number = number
         self.route = route
         self.totalSeats = totalSeats
         self.seatFare = 500
-        self.bookSeat = 0
+        self.bookedSeat = 0
 
-    
+
     @staticmethod
     def bookSeat(self, seat):
 
-        if self.bookSeat + seat <= self.totalSeats:
-            self.bookSeat += seat
-            print(f"Successfully booked {seat} seats on bus {self.number} for {self.totalFare * seat} taka.")
+        if self.bookedSeat + seat <= self.totalSeats:
+            self.bookedSeat += seat
+            print(f"Successfully booked {seat} seats on bus {self.number} for {self.seatFare * seat} taka.")
         else:
             print("Not enough seats available.")
 
@@ -35,7 +37,7 @@ class BusSystem:
         else:
             print("Available Buses:")
             for bus in self.busesList:
-                print(f"Bus Number: {bus.number}, Route: {bus.route}, Total Seats: {bus.totalSeats}, Booked Seats: {bus.bookSeat}")
+                print(f"Bus Number: {bus.number}, Route: {bus.route}, Total Seats: {bus.totalSeats}, Booked Seats: {bus.bookedSeat}")
 
     
     def findBus(self, busNumber):
@@ -47,7 +49,7 @@ class BusSystem:
     def seatAvailable(self, busNumber):
         bus = self.findBus(busNumber)
         if bus:
-            availableSeats = bus.totalSeats - bus.bookSeat
+            availableSeats = bus.totalSeats - bus.bookedSeat
             return availableSeats
         else:
             return 0
@@ -58,8 +60,7 @@ class BusSystem:
         bus = self.findBus(busNumber)
         if bus:
             if self.seatAvailable(busNumber) >= seat:
-                bus.bookSeat(seat)
-                print(f"Ticket booked successfully on bus {busNumber}.")
+                bus.bookSeat(bus, seat)
 
 
     

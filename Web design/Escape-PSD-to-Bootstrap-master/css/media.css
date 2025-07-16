@@ -1,0 +1,595 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+h1{
+	font-size: 30.99px;
+	margin-bottom: 15px;
+}
+p{
+	font-size: 16px;
+	margin-bottom: 15px;           
+}
+/*banner-start*/
+.logo img{
+	width: 110px;
+}
+.custom-nav{
+	padding: 15px 0;
+}
+.custom-menu ul li a{
+	font-size: 22px;
+	text-align: center;
+	padding-bottom: 20px !important;
+}
+.custom-menu ul li:first-child a {
+	padding-left:15px !important;
+}
+.banner-contant{
+	padding-top: 40px;
+	padding-bottom: 55px;
+}
+.banner-contant p{
+	font-size: 16px;
+	margin-bottom: 18px;
+}
+.banner-contant h1{
+	font-size: 25.99px;
+	margin-bottom: 25px;
+}
+.banner-button button{
+	font-size: 16px;
+	padding:5px 15px !important;
+}
+.banner-button button:hover{
+	font-size: 18px;
+}
+/*banner-end*/
+/*development-start*/
+.development{
+	padding: 45px 0;
+}
+.development-image img{
+	display: none;
+}
+/*development-end*/
+/*branding-start*/
+.branding{
+	padding: 40px 0;
+}
+.branding-image img{
+	display: none;
+}
+/*branding-end*/
+/*service-start*/
+.service{
+	padding: 40px 0;
+}
+.service-text{
+	text-align: center;
+}
+.service-text p{
+	margin-bottom: 20px;
+}
+.service-icon{
+	margin: auto;
+	height: 50px;
+	width: 50px;
+}
+.service-icon i{
+	font-size: 25px;
+	margin-top: 12px;
+}
+/*service-end*/
+/*clients-start*/
+.clients{
+	padding: 40px 0;
+}
+.client-title p{
+	font-size: 16px;
+}
+.mb-40{
+	margin-bottom: 20px;
+}
+.clients-img{
+	display: none;
+}
+.clients-text p,.clients-text-2 p{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.clints-p{
+	font-size: 16px;
+}
+.clients-text,.clients-text-2{
+	padding: 15px 25px;
+}
+ .clients-text::after,.clients-text-2::after {
+    display: none;
+}
+/*clients-end*/
+/*market-place-start*/
+.market-place{
+	padding: 40px 0;
+}
+.market-place-images ul li img{
+	text-align: center;
+	margin-bottom: 30px !important;
+}
+/*market-place-end*/
+/*team-start*/
+.team{
+	padding: 40px 0;
+}
+.team-member{
+	margin-bottom: 40px;
+}
+.team-member ul li{
+    height: 45px;
+    width: 45px;
+}
+.team-member ul li i{
+	font-size: 20px;
+    margin-top: 10px;
+}
+.member-image{
+	height: 130px;
+	width: 130px;
+	border: 5px solid #ffffff;
+}
+.team-text p{
+	font-size: 16px;
+	margin-top: 0px;
+}
+/*team-end*/
+/*contact-start*/
+.contact{
+	padding: 40px 0;
+}
+.contact-left-tilte{
+	text-align: center;
+}
+.contact-left-social i{
+	font-size: 16px;
+	color: #ffffff;
+}
+.contact-left-social{
+	margin-bottom: 40px !important;
+}
+.contact-left-social span{
+	font-size: 16px;
+}
+/*contact-end*/
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+h1{
+	font-size: 45.99px;
+	margin-bottom: 15px;
+}
+p{
+	font-size: 16px;
+	margin-bottom: 15px;           
+}
+/*banner-start*/
+.custom-nav{
+	padding: 20px 0;
+}
+.custom-menu ul li a{
+	font-size: 22px;
+	text-align: center;
+	padding-bottom: 20px !important;
+}
+.custom-menu ul li:first-child a {
+	padding-left:15px !important;
+}
+.banner-contant{
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+.banner-contant p{
+	font-size: 21px;
+	margin-bottom: 22px;
+}
+.banner-contant h1{
+	font-size: 37.99px;
+	margin-bottom: 40px;
+}
+.banner-button button{
+	font-size: 19px;
+	padding: 8px 25px !important;
+}
+.banner-button button:hover{
+	font-size: 21px;
+}
+/*banner-end*/
+/*development-start*/
+.development{
+	padding: 55px 0;
+}
+.development-image img{
+	display: none;
+}
+/*development-end*/
+/*branding-start*/
+.branding{
+	padding: 55px 0;
+}
+.branding-image img{
+	display: none;
+}
+/*branding-end*/
+/*service-start*/
+.service{
+	padding: 50px 0;
+}
+.service-text{
+	text-align: center;
+}
+.service-text p{
+	margin-bottom: 30px;
+}
+.service-icon{
+	margin: auto;
+	height: 60px;
+	width: 60px;
+}
+.service-icon i{
+	font-size: 30px;
+	margin-top: 15px;
+}
+/*service-end*/
+/*clients-start*/
+.clients{
+	padding: 50px 0;
+}
+.client-title p{
+	font-size: 20px;
+}
+.mb-40{
+	margin-bottom: 40px;
+}
+.clients-img{
+	display: none;
+}
+.clients-text p,.clients-text-2 p{
+	font-size: 22px;
+	margin-bottom: 12px;
+}
+.clints-p{
+	font-size: 18px;
+}
+.clients-text,.clients-text-2{
+	padding: 20px 30px;
+}
+ .clients-text::after,.clients-text-2::after {
+    display: none;
+}
+/*clients-end*/
+/*market-place-start*/
+.market-place{
+	padding: 50px 0;
+}
+.market-place-images ul li img{
+	text-align: center;
+	margin-bottom: 25px !important;
+	margin: 0 20px;
+}
+.market-place-images ul li:nth-child(3) img {
+	margin-bottom: 0px !important;
+}
+.market-place-images ul li:nth-child(4) img {
+	margin-bottom: 0px !important;
+}
+
+.market-place-images ul li:first-child img {
+	margin-left: 20px;
+}
+.market-place-images ul li:last-child  img{
+	margin-right: 20px;
+}
+/*market-place-end*/
+/*team-start*/
+.team{
+	padding: 50px 0;
+}
+.team-member{
+	margin-bottom: 50px;
+}
+.team-member ul li{
+	border: 2px solid #ffffff;
+    height: 50px;
+    width: 50px;
+}
+.team-member ul li i{
+	font-size: 20px;
+    margin-top: 12px;
+}
+.member-image{
+	height: 160px;
+	width: 160px;
+	border: 5px solid #ffffff;
+}
+.team-text p{
+	font-size: 18px;
+	margin-top: 0px;
+}
+/*team-end*/
+/*contact-start*/
+.contact{
+	padding: 50px 0;
+}
+.contact-left-tilte{
+	text-align: center;
+}
+.contact-left-social{
+	margin-bottom: 40px !important;
+}
+/*contact-end*/
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+h1{
+	font-size: 45.99px;
+	margin-bottom: 20px;
+}
+p{
+	font-size: 17px;
+	margin-bottom: 30px;           
+}
+/*banner-start*/
+.custom-nav{
+	padding: 30px 0;
+}
+.custom-menu ul li a{
+	font-size: 17px;
+}
+.banner-contant{
+    padding: 100px 0;
+    padding-top: 65px;
+}
+.banner-contant p{
+	font-size: 27px;
+	margin-bottom: 24px;
+}
+.banner-contant h1{
+	font-size: 45.99px;
+	margin-bottom: 45px;
+}
+.banner-button button{
+	font-size: 19px;
+	padding:12px 45px !important;
+}
+.banner-button button:hover{
+	font-size: 22px;
+}
+/*banner-end*/
+/*development-start*/
+.development{
+	padding: 60px 0;
+}
+.development-image img{
+	width: 210px;
+}
+/*development-end*/
+/*branding-start*/
+.branding{
+	padding: 60px 0;
+}
+.branding-image img{
+	width: 210px;
+}
+/*branding-end*/
+/*service-start*/
+.service{
+	padding: 60px 0;
+}
+.service-text p{
+	margin-bottom: 40px;
+}
+.service-icon{
+	height: 55px;
+	width: 55px;
+}
+.service-icon i{
+	font-size: 25px;
+	margin-top: 15px;
+}
+/*service-end*/
+
+/*clients-start*/
+.clients{
+	padding: 60px 0;
+}
+.client-title p{
+	font-size: 20px;
+}
+.clients-img{
+	height: 170px;
+	width:170px;
+}
+.clients-text p,.clients-text-2 p{
+	font-size: 19px;
+	margin-bottom: 14px;
+}
+.clints-p{
+	font-size: 18px;
+}
+.clients-text,.clients-text-2{
+	padding: 25px 35px;
+} 
+
+/*market-place-start*/
+.market-place{
+	padding: 40px 0;
+}
+.market-place-images ul li img{
+	margin: 0 15px;
+	width: 140px;
+}
+/*market-place-end*/
+/*team-start*/
+.team{
+	padding: 60px 0;
+}
+.team-member h1{
+	font-size: 17px;
+	margin-top: 18px;
+}
+.team-member span{
+	font-size: 15px;
+}
+.team-member ul li{
+    border: 2px solid #ffffff;
+    height: 40px;
+    width: 40px;
+}
+.team-member ul li i{
+	font-size: 22px;
+    margin-top: 9px;
+}
+.member-image{
+	height: 180px;
+	width: 180px;
+	border: 5px solid #ffffff;
+}
+.team-text p{
+	margin-top: 30px;
+}
+/*team-end*/
+/*contact-start*/
+.contact{
+	padding: 60px 0;
+}
+.contact-left-social{
+	margin-bottom: 30px;
+}
+.contact-left-social i{
+	font-size: 20px;
+	margin-right: 5px;
+}
+.contact-left-social span{
+	font-size: 15px;
+}
+.form input{
+    font-size: 14px;
+}
+.form textarea{
+	padding: 10px 20px 110px 20px;
+    font-size: 14px;
+}
+/*contact-end*/
+/*footer-start*/
+footer{
+	padding: 20px 0;
+}
+/*footer-end*/
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+    font-family: Brandon_bld;
+    font-size: 55.99px;
+    color: #222222;
+    margin-bottom: 25px;
+}
+/*banner-start*/
+.banner-contant p{
+	font-size: 28px;
+	margin-bottom: 35px;
+}
+.banner-contant h1{
+	font-size: 52.99px;
+	margin-bottom: 50px;
+}
+.banner-button button{
+	font-size: 23px;
+	padding:14px 50px !important;
+}
+.banner-button button:hover{
+	font-size: 25px;
+}
+/*banner-end*/
+/*development-start*/
+.development{
+	padding: 75px 0;
+}
+/*development-end*/
+/*branding-start*/
+.branding{
+	padding: 75px 0;
+}
+/*branding-end*/
+/*service-start*/
+.service{
+	padding: 80px 0;
+}
+.service-text h1{
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+.service-text p{
+	margin-bottom: 50px;
+}
+.service-icon{
+	height: 60px;
+	width: 60px;
+}
+.service-icon i{
+	font-size: 28px;
+	margin-top: 15px;
+}
+/*service-end*/
+/*clients-start*/
+.clients{
+	padding: 80px 0;
+}
+.client-title p{
+	font-size: 22px;
+}
+.mb-40{
+	margin-bottom: 40px;
+}
+.clients-img{
+	height: 210px;
+	width: 210px;
+}
+/*clients-end*/
+/*team-start*/
+.team{
+	padding: 80px 0;
+}
+.team-member ul li{
+    height: 45px;
+    width: 45px;
+    margin-top: 12px;
+}
+.team-member ul li i{
+	font-size: 20px;
+    margin-top: 10px;
+}
+.member-image{
+	height: 210px;
+	width: 210px;
+	border: 6px solid #ffffff;
+}
+.team-text p{
+	font-size: 19px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+/*team-end*/
+/*contact-start*/
+.contact{
+	padding: 80px 0;
+}
+footer{
+	padding: 30px 0;
+}
+/*contact-end*/
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
